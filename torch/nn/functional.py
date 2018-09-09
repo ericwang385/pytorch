@@ -24,11 +24,11 @@ class _Reduction:
     @staticmethod
     def get_enum(reduction):
         if reduction == 'none':
-            return 0
+            return 'none'
         if reduction == 'elementwise_mean':
-            return 1
+            return 'elementwise_mean'
         if reduction == 'sum':
-            return 2
+            return 'sum'
         raise ValueError(reduction + " is not a valid value for reduction")
 
     # In order to support previous versions, accept boolean size_average and reduce
